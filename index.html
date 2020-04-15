@@ -111,6 +111,7 @@
 body {
 	font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    background: url(img2/FONDO.jpg) !important;
 }
 
 header {
@@ -537,7 +538,7 @@ p {
 }
 
 footer {
-	background: rgba(200, 117, 114);
+	background: #fff;
 	padding: 50px 0 0;
 }
 
@@ -555,13 +556,13 @@ footer {
 }
 
 .sci li a {
-	color: white;
+	color: black;
 	font-size: 2em;
 	transition: 0.5s;
 }
 
 .sci li a:hover {
-	color: #fff;
+	color: aqua;
 }
 
 .cpryt {
@@ -576,7 +577,7 @@ footer {
 
 .cpryt a,.cpryt a:hover {
 	
-	color: #fff;
+	color: #000;
 }
 
 
@@ -631,11 +632,12 @@ footer {
         font-size: 12px !important;
         width: 180px;
         margin-top: 30px !important;
+        margin-left: 70px
     }
     
     #banner2 #fondo2 {
         width: 310px !important;
-        margin-right: -15px;
+        margin-right: px;
     }
     
     
@@ -761,7 +763,7 @@ footer {
 	}
 
 	footer {
-		background: #000;
+		background: #fff;
 		padding: 0px 0 20px;
 	}
 
@@ -771,7 +773,7 @@ footer {
 	}
 
 	.sci li a {
-		color: #777;
+		color: #black;
 		font-size: 1.5rem;
 		transition: 0.5s;
 	}
@@ -829,7 +831,35 @@ footer {
     #banner2 .col-9 {
         width: 100wh !important;
     }
+    
+    #banner2 .col-9 p {
+        margin-left: 0px !important;
+    }
+    
+    }
+    
         
+@media (max-width: 560px) {
+
+        
+        .sec0 #contenido {
+        position: relative !important;
+        margin-top: 360px;
+        
+    }
+    
+    #banner2 {
+        
+    }
+    
+    #banner2 #fondo2 {
+        width: 200px !important;
+    }
+    
+    #banner2 .col-9 p {
+        margin-left: 40px !important;
+    }
+    
     }
     
     
@@ -838,8 +868,8 @@ footer {
             width: 100wh;
             margin-right: 35px;
         }
-        .sec0 {
-            margin-top: 90px;
+        .sec0 .col-5 {
+            margin-top: 200px;
         }
         
         .sec0 #contenido {
@@ -849,11 +879,58 @@ footer {
     }
         
         #banner2 #fondo2 {
-        width: 127px !important;
+        width: 157px !important;
         margin-right: 0px !important;
     }
         #banner2 .col-9 p {
             position: absolute;
+            margin-left: 0px !important;
+        }
+        
+    }
+    
+    @media (max-width: 419px) {
+        
+        .sec0 #contenido {
+        position: relative !important;
+        margin-top: 1300px;
+        
+    }
+        
+        #banner2 #fondo2 {
+        width: 137px !important;
+        margin-right: 0px !important;
+    }
+        #banner2 .col-9 p {
+            margin-left: -10px !important;
+        }
+        #banner2  {
+            background: white;
+        }
+        
+    }
+    
+    @media (max-width: 350px) {
+        
+        .sec0 #contenido {
+        position: relative !important;
+        margin-top: 1500px;
+        
+    }
+        
+        #banner2 #fondo2 {
+        width: 120px !important;
+        margin-right: 0px !important;
+    }
+        #banner2 .col-9 p {
+            position: absolute;
+            margin-left: -25px !important;
+            font-size: 10px !important;
+            font-weight: bold !important;
+        }
+        
+        #banner2  {
+            background: white;
         }
         
     }
@@ -882,15 +959,12 @@ footer {
     
     #banner2 {
         background: rgba(0,0,);
-        height: 200px;
         border: 3px solid rgba(0,0,0,0.1);
+        height: 206px !important;
     }
     
     #banner2 .col-9 {
-        border-top-right-radius:50derg;
-        border-bottom-right-radius:50deg;
         background: white;
-    
     }
     
     #banner2 .col-9 p {
@@ -905,13 +979,12 @@ footer {
     
     #banner2 #fondo2 {
         position: absolute;
-        right: 0px;
+        right: 1px;
         background: white;
         height: 200px;
         width: 360px;
         border-top-left-radius: 50%;
         border-bottom-left-radius: 50%;
-    
     }
     
     #banner2 #fondo2 img {
