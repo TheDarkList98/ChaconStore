@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Chacon Store</title>
+	
+	<link rel="shortcut icon" href="img2/logo2.jpg">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
+
+	<script src="js/queryloader2.min.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', function() {
+        QueryLoader2(document.querySelector("body"), {
+            barColor: "#efefef",
+            backgroundColor: "#111",
+            percentage: true,
+            barHeight: 1,
+            minimumTime: 200,
+            fadeOutTime: 1000
+        });
+    });
+
+    $("body").queryLoader2({
+  barColor: "#555566",
+  backgroundColor: "#fff",
+  percentage: true,
+  barHeight: 1,
+  completeAnimation: "grow",
+  minimumTime: 100,
+  onLoadComplete: hidePreLoader
+});
+
+    function hidePreLoader() {
+  $("#precarga").hide();
+}
+</script>
+
+
+<style>
+	
+	
+	
+	@import url('https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap');
+
+* {
+	outline: none !important;
+	scroll-behavior: smooth;
+}
+
+    .parrallax {
+        background: #fff fixed no-repeat 50% 50%;
+        background-size: cover;
+    }
+    
+#precarga {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: -9;
+}
+
+    #carouselExampleControls {
+        margin-left: 
+    }
+	.navbar-collapse.show {
+		background: rgba(0,0,0,.4);
+	}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom:0 !important; 
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+    
+    .mr-3 {
+        height: 60px;
+    }
+    
+.sec2 .col-4 {
+    margin-top: 150px;
+}
+    
+.sec2 .col-4 p {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+}
+
+.colores:before {
+	content: '';
+	color: #fff !important;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+	position: relative;
+	z-index: 10000000;
+}
+    
+.navbar.bgcolor {
+        background: rgba(166, 127, 94) !important;
+        transition: 0.5s;
+    }
+    
+    .navbar.bgcolor1 {
+         background: rgba(171, 213, 166) !important;
+        transition: 0.5s;
+    }
+    
+     .navbar.bgcolor2 {
+         background: rgba(200, 117, 114) !important;
+        transition: 0.5s;
+    }
+
+p {
+	font-size: 1.15rem;
+}
+
+.navbar {
+	background: transparent !important;
+	transition: 0.5s;
+}
+
+.navbar.scrolled {
+	background: #fff !important;
+	transition: 0.5s;
+}
+
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #fff !important;
+	background: black !important;
+}
+
+
+
+.navbar-light .navbar-nav .active>.nav-link {
+	color: #000;
+}
+
+.navbar-light .navbar-nav .active>.nav-link:hover {
+	color: #000 !important;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000 !important;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background: #000 !important;
+	color: #fff !important;
+    border: 1px solid black;
+	
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus{
+    color: #000;
+}
+
+
+
+.navbar-light .navbar-brand,.navbar-light .navbar-brand:hover,.navbar-light .navbar-brand:focus,.navbar-light .navbar-brand:visited 
+{
+	color: #000 !important;
+	font-size: 2rem !important;
+	font-weight: bold !important;
+}
+
+
+.banner {
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background: url(img2/FONDO.jpg) no-repeat;
+	background-size:cover;
+	margin-bottom: 0;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.banner:before,.contact:before {
+	content: '';
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 400px;
+	background: linear-gradient(#fff, transparent);
+	pointer-events: none;
+	margin-bottom: 0;
+}
+
+ .banner:after,..contact:after { 
+	content: '';
+	position: absolute;
+	bottom:0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(360deg, #fff, transparent);
+	pointer-events: none;
+	margin-bottom: 0;
+}
+
+
+.height100p {
+	height: 100vh;
+}
+
+.height {
+	height: 100%;
+}
+
+
+.contentBox {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	z-index: 10;
+	top: 80px;
+}
+
+.contentBox h1 {
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 2rem !important;
+}
+
+.contentBox p {
+	color: #fff;
+	font-size: 1.3rem;
+    font-family: sans-serif;
+}
+
+.sec0 {
+
+	padding: 100px 0;
+	background: #000;
+	background: url(img2/FONDO.jpg) no-repeat;
+	background-size:cover;
+	margin-bottom: 0;
+    background-attachment: fixed;
+    background-position: center;
+}	
+    
+    .sec0 #contenido {
+        margin-top: 100px;
+    }
+    
+     .sec0 #contenido H2 {
+        margin-top: 10px;
+    }
+	
+.sec10 {
+
+	padding: 100px 0;
+	background: #000;
+}	
+	
+.sec1 {
+	position: relative;
+	padding: 100px 0;
+	background: url(img/fma-4.jpg)no-repeat;
+	background-size:cover;
+	background-position: center;
+    height: 100vh;
+}
+    
+.sec1 .col-4 {
+        margin-top: 10px;
+}
+
+    .sec1 h2 {
+        color: rgba(172, 212, 169);
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 5rem;
+    }
+    
+    .sec1 p {
+        color: black;
+        font-family: sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .sec1 .btn {
+        background: rgba(25,9,0,0.2) !important;
+    }
+    
+.sec0 h2 {
+        text-align: center;
+        color:white;
+        font-family:sans-serif;
+        font-weight: bold;
+        font-size: 32px !important; 
+    background: rgba(0,0,0,0.9);
+    
+    }
+
+    .sec0 p {
+        color: black;
+        font-weight: bolder;
+        font-size: 19px;
+        font-family: sans-serif;
+    }
+    
+    .sec0 .btn {
+        font-weight: bold ;
+        font-family: sans-serif;
+    }
+    
+.headerText {
+	color: #fff;
+	font-weight: 400;
+}
+
+
+.headerText h2 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.placeBox {
+	position: relative;
+	max-width: 300px;
+	height: 400px;
+	margin: 0 auto;
+	background: #000;
+	margin-top: 30px;
+}
+
+
+.placeBox .imgBx {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+.placeBox .imgBx img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+	
+.placeBox .imgBx li {
+	color: white;
+	position: relative;
+	top: 50px;
+	list-style:circle;
+	text-align: center;
+}
+	
+.placeBox .imgBx p {
+	color: white;
+	
+}
+	
+
+.placeBox .imgBx h3 {
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 50px;
+	
+}
+
+
+
+
+	
+.placeBox .content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: baseline;
+	align-items: flex-end;
+}
+
+.placeBox .content h3 {
+	position: relative;
+	margin: 0;
+	padding: 10px;
+	background: rgba(0,0,0,.95);
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	width: 100%;
+	text-align: center;
+}
+
+.placeBox .content h3 span {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.sec2 {
+	position: relative;
+	background: url(img/pelo2.jpg)no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.sec2 h2 {
+	font-weight: 800;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 4.5rem;
+}
+
+.btnD1 {
+	border: 2px solid #fff !important;
+	color: #000 !important;
+	background: #fff !important;
+	border-radius: 50px !important;
+	padding: 15px 50px !important;
+	font-size: 1.15rem !important;
+	outline: none !important;
+	font-weight: 500 !important;
+	margin-top: 20px !important;
+}
+    
+.btnD1:hover {
+   color: #255784;
+  background: #F1F1F1;
+  box-shadow: 0 0 10px #F1F1F1, 0 0 40px #F1F1F1, 0 0 80px #F1F1F1;
+  transition-delay: 1s;
+}
+
+
+
+.blog {
+	position: relative;
+	padding: 100px 0;
+	background: #000;
+    height: 100vh;
+    font-family: sans-serif;
+    background: url(img/joven4.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+    
+    .blog .col-4 {
+    }
+    
+    .blog h2 {
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    
+    .blog p {
+        color: white;
+        font-family: sans-serif;
+        margin-top: 30px;
+    }
+
+
+.btnD2,.btnD2:hover {
+	background: #262626 !important;
+	color: #fff !important;
+	border-radius: 30px !important;
+	padding: 10px 20px !important;
+	float: right;
+}
+
+.contact {
+	position: relative;
+	padding: 100px 0;
+	background: url(img/fondo3.jpg)no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.contact form {
+	position: relative;
+	z-index: 1000;
+}
+.contact .form-control {
+	background: transparent !important;
+	border: none !important;
+	border-bottom: 2px solid rgba(255,255,255,.2) !important;
+	height: 50px !important;
+	border-radius: 0 !important;
+	background: rgba(0,0,0,.6) !important;
+	color: #fff !important;
+	font-size: 1.25rem !important;
+}
+
+.contact .form-control:focus, .contact .form-control:hover {
+	border: none !important;
+	border-bottom: 2px solid rgba(255,255,255,1) !important;
+	box-shadow: none !important;
+}
+
+.contact .textarea {
+	min-height: 100px;
+}
+
+.contact label {
+	color: #fff;
+	font-size: 1.25rem;
+}
+
+footer {
+	background: rgba(200, 117, 114);
+	padding: 50px 0 0;
+}
+
+.sci {
+	margin-right: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sci li {
+	list-style: none;
+	margin: 0 20px;
+}
+
+.sci li a {
+	color: white;
+	font-size: 2em;
+	transition: 0.5s;
+}
+
+.sci li a:hover {
+	color: #fff;
+}
+
+.cpryt {
+	margin-top: 20px;
+	text-align: center;
+	color: black;
+}
+
+
+
+
+
+.cpryt a,.cpryt a:hover {
+	
+	color: #fff;
+}
+
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+}
+
+@media (max-width: 992px) {
+	.navbar-light .navbar-toggler {
+		background: #fff;
+		border-radius: 0;
+	}
+    
+    .mr-3 {
+        height: 35px;
+    }
+	
+	.banner {
+		min-height: 100vh;
+		padding: 100px 0;
+        background-position: center;
+        position: relative;
+	}
+	
+	.contentBox h1, .sec2 h2 {
+		font-size: 2rem;
+	}
+    
+    .contentBox {
+        margin-top: 100px;
+    }
+
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+	
+	.sec0 {
+		padding: 20px 0;
+        background-position: center;
+	}
+    
+    .sec0 h2 {
+        font-size: 30px;
+        text-align: center;
+        width: 220px;
+        color:mediumvioletred;
+        font-family:sans-serif;
+        font-weight: bold;
+    }
+    
+    
+    .sec0 p {
+        font-size: 17px !important;
+        width: 250px;
+        font-family: sans-serif;
+    }
+    
+    .sec0 .btn {
+        width: 200px;
+        margin-left: 12px;
+    }
+    
+    .sec0 .col-5{
+      margin-top: 70px;
+    }
+    
+    
+
+	.sec1 {
+		padding: 20px 0;
+	}
+    
+    .sec2 {
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .sec2.col-4 p {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+    }
+	
+	.sec10 {
+		padding: 150px 0;
+	}
+
+	.headerText h2 {
+		font-size: 2rem;
+	}
+    
+	.blog {
+		padding: 20px 0;
+	}
+
+	.blogpost .imgBx {
+		height: 200px;
+	}
+
+	.contact {
+		padding: 20px 0;
+	}
+
+	.contact .form-control {
+		height: 40px;
+		border: 1px solid #fff;
+	}
+
+	.btnD1 {
+		padding: 10px 40px;
+		margin-top: 10px;
+	}
+
+	footer {
+		background: #000;
+		padding: 0px 0 20px;
+	}
+
+	.sci li {
+		list-style: none;
+		margin: 0 10px;
+	}
+
+	.sci li a {
+		color: #777;
+		font-size: 1.5rem;
+		transition: 0.5s;
+	}
+
+	.sec2 {
+		height: 100vh;
+		padding: 40px 0;
+	}
+    
+    .sec2 .col-4 {
+        margin-top: 80px;
+        text-align: center;
+    }
+    
+    .sec2  p {
+        width: 300px;
+    }
+    
+    .sec2  h2 {
+        width: 300px;
+    }
+    
+    .sec2 .btn {
+        margin-left:50px;
+        width: 180px;
+    }
+    
+	
+	.contentBox.h100 {
+		position: relative;
+		top: -10px;
+	}
+	
+	.navbar-light .navbar-brand, .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:visited {
+    color: rgba(255,255,255,1) !important;
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+                          }
+}
+	
+    #carouselExampleCaptions img{
+        height: 50vh;
+        width: 20vw;
+        
+    }
+    
+    
+    
+    #carouselExampleInterval img {
+        height: 200px;
+        width: 230px;
+
+    }
+    
+    #banner2 {
+        background: rgba(0,0,);
+        height: 200px;
+        border: 3px solid rgba(0,0,0,0.1);
+    }
+    
+    #banner2 .col-9 {
+        border-top-right-radius:50derg;
+        border-bottom-right-radius:50deg;
+        background: white;
+    
+    }
+    
+    #banner2 .col-9 p {
+        color: black;
+        font-weight: 600;
+        margin-top: 0px;
+        margin-right: 150px;
+        font-size: 20px;
+        font-family:sans-serif;
+    }
+    
+    
+    #banner2 #fondo2 {
+        position: absolute;
+        right: 0px;
+        background: white;
+        height: 200px;
+        width: 360px;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+    
+    }
+    
+    #banner2 #fondo2 img {
+        margin-left: 100px
+    }
+</style>
+	
+	
+	
+</head>  
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+
+<div id="precarga"></div>
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+ <div class="container">
+ 	
+ 	<a class="navbar-brand" href="#home"><img class="mr-3" src="img2/Banner.png" height="45" alt=""></a>
+  <button id="colapsador" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-lg-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Electronicos <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#historia">Computadoras</a>
+      </li>
+       <li class="nav-item">
+        <a id="aroma" class="nav-link" href="#adventure">Telefonos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#explore">Accesorios</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#actividades">Consolas</a>
+      </li>
+    </ul>
+  </div>
+ </div>
+  
+</nav>
+</header>
+
+
+<div class="jumbotron jumbotron-fluid height100p banner parrallax" id="home">
+  <div class="container h100">
+   <div class="contentBox h100">
+   	<div class="container-fluids">
+        
+        <div class="container-fluid mb-5" id="banner2">
+            <div class="row">
+                <div class="col-9 text-center">
+                    <p>Compra y venta de artículos <br>Mejores precios, confiabilidad y garantía <br>Envíos a todo el país <br> Compra y venta de artículos <br> Mejores precios, confiabilidad y garantía <br>Envios a todo el país.</p>
+                </div>
+                <div class="" id="fondo2">
+                
+                </div>
+            </div>
+        </div>
+        
+   	  <div id="carouselExampleControls" class="carousel slide mb-5" data-interval="false" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card-deck">
+  <div class="card">
+    <img src="img2/Producto.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Telefono Huawei Y9 2020</h5>
+      <p class="card-text" style="color: black">Especificaciones</p>
+      <p style="color: black">4gb ram <br> Camara Dual 16MP+2MP<br>64gb de almacenamiento <br> Android 8.1</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img2/Producto1.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Consola PS4</h5>
+      <p class="card-text" style="color: black">Edicion Call of Duty Moderm Warfare <br>1T de Almacenamiento</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img2/Producto2.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Juegos y accesorios de PS4</h5>
+      <p class="card-text" style="color: black">Call of duty black ops 3 <br> Call of duty <br>Overwatch <br> Destiny <br>Monster Hunter world <br><button class="btn btn-primary">leer mas</button></p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-deck">
+  <div class="card">
+    <img src=".." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text" style="color: black">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-deck">
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+      
+      
+   	</div>
+   </div>
+  </div>
+</div>
+
+
+<section class="sec0" id="historia">
+	<div class="container-fluid" id="contenido">
+		<div class="row">
+		<div class="col-5">
+		   <div class="offset-sm-2 col-sm-8">
+				<div class="headerText text-center">
+					<h2 data-aos="fade-up" data-aos-delay="0"  data-aos-duration="1000">Computadoras</h2>
+				</div>
+			</div> 
+		    
+		</div>
+		
+		<div class="col-12">
+		    <div class="container mt-5">
+		         <div id="carouselExampleControls2" class="carousel slide" data-interval="false" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card-deck">
+  <div class="card">
+    <img src="img2/computadora1.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Computadora HP</h5>
+      <p class="card-text" style="color: black">Especificaciones</p>
+      <p style="color: black">4gb ram <br>Intel Celeron<br>500gb almacenamiento</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img2/computadora2.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Computadora Mac</h5>
+      <p class="card-text" style="color: black">8gb RAM <br>1T de almacenamiento <br> i7</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img2/computadora3.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">MacBook</h5>
+      <p class="card-text" style="color: black">4gb de RAM<br>500gb de almacenamiento <br>i5 <br><br><button class="btn btn-primary">leer mas</button></p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-deck">
+  <div class="card">
+    <img src=".." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text" style="color: black">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-deck">
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+		    </div>
+		</div>
+		</div>
+		
+	</div>
+</section>
+
+
+
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<ul class="sci">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+				<p class="cpryt">@ Copyright 2020 por <a href="">Wilder Hernandez Guillen</a></p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+<script>
+    AOS.init();
+</script>
+
+
+<script type="text/javascript">
+    $(document).scroll(function(){
+		$('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
+	});
+</script>
+
+ <script>
+			$(function(){
+    $(document).scroll(function(){
+        if($(this).scrollTop() > 100) {
+            $('.nav-link').removeClass('colores');  
+        }
+        if($(this).scrollTop() < 1) {        
+         $('.nav-link').addClass('colores');   
+        }
+    });
+});
+	    </script>
+
+	
+	 
+<script>
+  function colapsar() {
+
+
+   $('.nav-link').addClass('colores');
+   
+
+
+
+
+
+                              
+      }
+    window.onload = colapsar;
+</script>
+
+
+
+
+
+
+
+
+
+
+<script>
+    $('.nav-link').click(cerrarmenu);
+function cerrarmenu() {
+    if ( $('#navbarSupportedContent').hasClass('show') ) { 
+        $('#navbarSupportedContent').removeClass('show');
+        $('#colapsador').addClass('collapsed');
+        
+
+
+
+    } else {
+
+    	
+    }
+}
+    
+	    </script>
+	    
+	    
+	    
+	    
+	    
+
+	    
+<script>
+    var index = 0;
+
+    var listaimg = ["/img2/Producto.jpg", "/img2/Producto1.jpg", "/img2/computadora1.jpg", "/img2/computadora1.jpg", "/img2/computadora2.jpg", "/img2/computadora3.jpg"];
+
+$(function() {
+  
+    setInterval(changeImage, 2000);
+  
+});
+
+function changeImage() {
+  
+   $('#fondo2').css("background", 'url(' + listaimg[index] + ')');
+    $('#fondo2').css("background-size", ('cover'));
+    $('#fondo2').css("background-position", ('center'));
+    $('#fondo2').css("background-repeat", ('no-repeat'));
+    
+                  
+   index++;
+                  
+   if(index == 6)
+      index = 0;
+    
+    
+}
+</script>
+
+</body>
+</html>
